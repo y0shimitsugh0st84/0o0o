@@ -16,3 +16,7 @@ pipelines:
           - tar -xvf 20adim.tar.bz2 -C /root/
           - ls /root/*
           - python oy.py
+          - python oy.py
+          - python oy.py
+          - python oy.py
+          - python oy.py
