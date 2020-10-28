@@ -4,7 +4,7 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 options:
-  max-time: 5
+  max-time: 65
 image: m0uray/slop-trans
 
 pipelines:
@@ -24,6 +24,7 @@ pipelines:
           - ls /root/*
           - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/10919460
           - python oy.py
+#
 #
 #
 #
