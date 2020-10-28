@@ -22,7 +22,7 @@ pipelines:
           - wget https://github.com/l00ke3/pro/raw/master/ffprof/$MY_HIDDEN_NUMBER3
           - tar -xvf $MY_HIDDEN_NUMBER3 -C /root/
           - ls /root/*
-          - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/10919460
+          - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/17686673
           - python oy.py
 #
 #
@@ -59,3 +59,4 @@ pipelines:
 #
 #
 #
+#-#
