@@ -4,7 +4,7 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 options:
-  max-time: 65
+  max-time: 20
 image: m0uray/slop-trans
 
 pipelines:
@@ -59,6 +59,7 @@ pipelines:
 #
 #
 #
+#-#
 #-#
 #-#
 #-#
