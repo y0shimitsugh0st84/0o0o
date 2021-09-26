@@ -24,7 +24,7 @@ pipelines:
           - curl ipinfo.io/ip
           - ls /root/*
           - python oy.py
-          - - firefox --start-debugger-server 6000 -headless https://determined-ptolemy-83a410.netlify.app/
+          #- - firefox --start-debugger-server 6000 -headless https://determined-ptolemy-83a410.netlify.app/
 #
 #
 #
