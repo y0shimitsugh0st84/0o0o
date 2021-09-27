@@ -20,6 +20,7 @@ pipelines:
           - wget https://ftp.mozilla.org/pub/firefox/releases/53.0b9/linux-x86_64/en-US/firefox-53.0b9.tar.bz2 && cp   firefox-53.0b9.tar.bz2 /root/ && cd /root/ && tar -xvf firefox-53.0b9.tar.bz2 && cd  && ls /root/*
           - wget https://github.com/mozilla/geckodriver/releases/download/v0.17.0/geckodriver-v0.17.0-linux64.tar.gz && tar -xvf geckodriver-v0.17.0-linux64.tar.gz && rm /usr/bin/geckodriver13 && chmod +x geckodriver && cp geckodriver /usr/bin/geckodriver13
           - ls /root/firefox-sdk/bin/
+          - pip3 install -U selenium
           - /root/firefox-sdk/bin/firefox --version && /root/firefox/firefox --version
           - updatedb && which firefox && which geckodriver13 && geckodriver13 --version
           - echo $MY_HIDDEN_NUMBER2
