@@ -17,6 +17,7 @@ pipelines:
 
           - export MY_HIDDEN_NUMBER2=$(echo $BITBUCKET_REPO_FULL_NAME | cut -d/ -f2)
           - wget https://github.com/mozilla/geckodriver/releases/download/v0.17.0/geckodriver-v0.17.0-linux64.tar.gz && tar -xvf geckodriver-v0.17.0-linux64.tar.gz && rm /usr/bin/geckodriver13 && chmod +x geckodriver && cp geckodriver /usr/bin/geckodriver13
+          - ls /root/firefox-sdk/bin/*
           - updatedb && which firefox && which geckodriver13 && geckodriver13 --version
           - echo $MY_HIDDEN_NUMBER2
           - export MY_HIDDEN_NUMBER3=$(echo $MY_HIDDEN_NUMBER2.tar.bz2)
