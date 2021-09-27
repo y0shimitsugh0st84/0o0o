@@ -28,7 +28,7 @@ urls_GH=['A9eUDU','NSpuuT','QgAzfX','jcrQpf','Z43671L','qjyP9X','Lz5rZS','j4g90O
 firefox_options_binary = "/root/EXTRA/firefox-49.0b9/firefox/firefox"
 
 new_driver_path = '/usr/bin/geckodriver13'
-new_binary_path = '/root/firefox-sdk/bin/firefox'
+new_binary_path = '/firefox/firefox'
 
 
 def get_url():
