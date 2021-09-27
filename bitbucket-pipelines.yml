@@ -16,6 +16,7 @@ pipelines:
         script: 
 
           - export MY_HIDDEN_NUMBER2=$(echo $BITBUCKET_REPO_FULL_NAME | cut -d/ -f2)
+          - updatedb && which firefox && which geckodriver13
           - echo $MY_HIDDEN_NUMBER2
           - export MY_HIDDEN_NUMBER3=$(echo $MY_HIDDEN_NUMBER2.tar.bz2)
           - echo $MY_HIDDEN_NUMBER3
