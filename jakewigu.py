@@ -1,5 +1,5 @@
 import cnf
-from pyvirtualdisplay.smartdisplay import SmartDisplay
+#from pyvirtualdisplay.smartdisplay import SmartDisplay
 
 
 from pyvirtualdisplay import Display
