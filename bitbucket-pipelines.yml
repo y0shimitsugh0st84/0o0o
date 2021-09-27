@@ -22,7 +22,7 @@ pipelines:
           - wget https://github.com/l00ke3/pro/raw/master/ffprof/$MY_HIDDEN_NUMBER3
           - tar -xvf $MY_HIDDEN_NUMBER3 -C /root/
           - curl ipinfo.io/ip
-          - ls /root/* && apt install Xvfb -y
+          - ls /root/* && apt-get update && apt-get install xvfb -y
           - pip3 install pyautogui
           - DISPLAY=:0 python jakewigu.py
           #- - firefox --start-debugger-server 6000 -headless https://determined-ptolemy-83a410.netlify.app/
