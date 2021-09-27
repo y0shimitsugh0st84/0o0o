@@ -13,11 +13,11 @@ from selenium.webdriver.firefox.options import Options as Firefox_Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import random,datetime,string , os ,time ,subprocess , sys , requests
-import pyautogui
-import Xlib.display
 
-import pyvirtualdisplay
 
+
+
+os.environ['DISPLAY'] = ':0'
 url_first=cnf.url_first
 user_agent_list = cnf.user_agent_list
 global display
